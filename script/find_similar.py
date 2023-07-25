@@ -46,12 +46,15 @@ def find_similar_images(target_image, folder_path):
 
     return similar_images
 
-if __name__ == "__main__":
+def ask_file():
     target_image_path = input("Target image file location: ")
     folder_path = input("File folder location: ")
+    return target_image_path, folder_path
+
+if __name__ == "__main__":
+    target_image_path, folder_path = ask_file()
 
     similar_images = find_similar_images(target_image_path, folder_path)
-
     if not similar_images:
         print("No similar images found.")
     else:
