@@ -1,6 +1,5 @@
 import cv2
 import os
-import numpy as np
 
 def compare_images(image1, image2):
     img1 = cv2.imread(image1)
