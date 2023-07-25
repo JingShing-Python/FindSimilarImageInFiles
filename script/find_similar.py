@@ -47,8 +47,8 @@ def find_similar_images(target_image, folder_path):
     return similar_images
 
 if __name__ == "__main__":
-    target_image_path = "image/a.jpg"
-    folder_path = "find"
+    target_image_path = input("Target image file location: ")
+    folder_path = input("File folder location: ")
 
     similar_images = find_similar_images(target_image_path, folder_path)
 
